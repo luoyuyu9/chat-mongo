@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>聊天室</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="wrapper">
+    <div id="chat">
+    <p class="connected">在线人数: <span id="client-count"> 0</span></p>
+    <div id="chatroom"></div>
+    
+      <form class="chatbox clearfix">
+        <div id="box">
+        <input type="text" name="message" id="message"/>
+        <button id="send">发送</button> 
+        </div>
+      </form>
+    
+  </div>
+    <div id="login">
+      <h3 class="title">请输入您的昵称</h3>
+      <input id="username" type="text" maxlength="14" />
+      <div><button id="enter">进入聊天室</button></div>
+    </div>  
+    </div>
+ <script src="/javascripts/jquery.js"></script>
+ <script src="/socket.io/socket.io.js"></script>
+ <script src="/javascripts/main.js"></script>
+
+ </body>
+</html>
