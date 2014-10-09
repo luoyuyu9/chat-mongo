@@ -44,7 +44,7 @@ $('form').submit(function(){
 	return false;
 });
     socket.on('newchat',function(data){
-    	$('#chatroom').append('<div class="dialog clearfix"><span class="name">'+data.name+'</span><p class="text">'+data.text+'<span class="arrow"></span></p></div>').animate({scrollTop:$('.text:last').offset().top}, 100);
+    	$('#chatroom').append('<div class="dialog clearfix"><span class="name">'+data.name+'</span><p class="text">'+data.text+'<span class="arrow"></span></p></div>').animate({scrollTop:5000}, 100);
         $.each($('.name'),function(index,value){
             if(username==$('.name').eq(index).text()){
             $(this).addClass('right');
