@@ -67,21 +67,13 @@ socket.on('user left', function (data) {
   });
 //获取屏幕
 if($(window).innerWidth()<=992){ 
-	var w=$(window).innerWidth();
     var h=$(window).innerHeight()-123;
-    var wid=parseInt(w-$('#message').outerWidth());
      $('#chatroom').css('height',(h+'px'));
-     $('#box').css('width',(w+'px'));
-     $('#send').css('width',(wid+'px'));
 }
 
 $(window).resize(function(){
-	if($(window).innerWidth()<=992 && navigator.platform.indexOf('Win')!==0){ 
-	var w=$(window).innerWidth();
+	if($(window).innerWidth()<=992){ 
     var h=$(window).innerHeight()-123;
-    var wid=parseInt(w-$('#message').outerWidth());
 	$('#chatroom').css('height',(h+'px'));
-    $('#box').css('width',(w+'px'));
-    $('#send').css('width',(wid+'px'));
 };
 });
